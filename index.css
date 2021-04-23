@@ -51,17 +51,24 @@ body {
 	font-family: SoDoSans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-.navbar {
+nav {
 	height: 100px;
 }
 
-.left-nav, .right-nav {
-	display: inline-block;
+.left-nav button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+nav button:hover {
+	color: #008248;
 }
 
 .left-nav {
 	float: left;
-	text-transform: uppercase;
 	padding: 45px 100px;
 }
 
@@ -70,11 +77,17 @@ body {
 	padding: 45px 45px;
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%
+  }
+
 .hero-image {
 	background-color: rgb(30, 57, 50);
-	background-image: url("/images/xl-hero-desktop.png");
+	background-image: url("./images/xl-hero-desktop.png");
 	height: 800px;
-	position: relative;
+	margin-top: 100px;
 }
 
 .hero-text {
